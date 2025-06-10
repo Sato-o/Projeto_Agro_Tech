@@ -24,10 +24,10 @@ form.addEventListener('submit', (e) => {
   if (nome === '') erros.push('O nome não pode estar em branco.');
   if (sobrenome === '') erros.push('O sobrenome não pode estar em branco.');
 
-  const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  const emailVerific = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
   if (email === '') {
     erros.push('O e-mail não pode estar em branco.');
-  } else if (!emailRegex.test(email)) {
+  } else if (!emailVerific.test(email)) {
     erros.push('O e-mail deve estar em um formato válido.');
   }
 
